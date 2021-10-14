@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>
+     OVERLANDER
+  </title>
+</head>
+<body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Overlander</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="landscape.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Never Stop To </h2> 
+      <h3>Go on exploring the world</h3>
+      <p>Overlander welcoms you to the world of travelling anywhere in the world. Just go on enjoying the life as we have got only one life.</p>
+      <a href="#">Explore</a>
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="facebook.png"></a></li>
+      <li><a href="#"><img src="twitter.png"></a></li>
+      <li><a href="#"><img src="instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Destination</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <script>
+    const menutoggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menutoggle.addEventListener('click', ()=>{
+    menutoggle.classList.toggle('active')
+    showcase.classList.toggle('active')
+    })
+
+  </script>
+  </body>
+  </html>
